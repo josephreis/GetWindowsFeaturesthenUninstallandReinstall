@@ -4,7 +4,7 @@ Get-WindowsFeature |
     Where-Object Installed |
     #Chagne the Match for what you want to look for
     Where-Object Name -Match ^Web |
-    Export-Csv C:\Temp\WebFeaturesSecondTime.csv
+    Export-Csv C:\Temp\WebFeatures.csv
 
 #Uninstall list of windows features
  
