@@ -8,10 +8,8 @@ Get-WindowsFeature |
 
 #Uninstall list of windows features
  
-Import-Csv C:\Temp\WebFeaturesSecondTime.csv | ForEach-Object Name | Uninstall-WindowsFeature
-
-
+Import-Csv C:\Temp\WebFeatures.csv | ForEach-Object Name | Uninstall-WindowsFeature
  
 #Install list of windows features - Likely requires reboot here
  
-Import-Csv C:\Temp\WebFeaturesSecondTime.csv | ForEach-Object Name | Install-WindowsFeature
+Import-Csv C:\Temp\WebFeatures.csv | ForEach-Object Name | Install-WindowsFeature
